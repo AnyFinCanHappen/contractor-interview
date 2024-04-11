@@ -20,4 +20,8 @@ For example: If the site config key is "site" and a floorplan's code is "fp1", t
 
 ### User Interface Requirements
 
-When adding a new floorplan, the user must provide values for the "description" and "code" properties. The "key" property should automatically populate once the "code" property is filled out.
+1. **Adding a New Floorplan**: When adding a new floorplan, the user must provide values for the "description" and "code" properties. The "key" property should automatically populate once the "code" property is filled out.
+
+2. **Editing a Floorplan (Optional)**: Users should have the option to edit the "description" and "code" of an existing floorplan. Any updates to the "code" property should be properly reflected on the "key" property.
+
+3. **Deleting a Floorplan (Optional)**: Users should have the option to delete a floorplan from the site config.
