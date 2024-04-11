@@ -1,27 +1,23 @@
-# ContractorInterview
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
+# Contractor Interview
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Problem Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+We have a JSON object representing the configuration for a site. This object, known as the site config, consists of three properties: "description", "key", and "floorplans". Your task is to develop a UI that allows users to add floorplans to the site config.
 
-## Build
+### Floorplan Properties
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Each floorplan within the site config has the following properties:
 
-## Running unit tests
+- **Description**: A string with any length describing the floorplan.
+- **Code**: A unique 4-character string representing the floorplan.
+- **Key**: A concatenation of the site config's key and the floorplan's code, separated by a period ".". Since the codes are unique, a floorplan's key will also be unique.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+For example: If the site config key is "site" and a floorplan's code is "fp1", then the floorplan's key will be "site.fp1".
 
-## Running end-to-end tests
+### User Interface Requirements
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+When adding a new floorplan, the user must provide values for the "description" and "code" properties. The "key" property should automatically populate once the "code" property is filled out.
