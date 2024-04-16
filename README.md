@@ -13,7 +13,7 @@ We have a JSON object representing the configuration for a site. This object, kn
 Each floorplan within the site config has the following properties:
 
 - **Description**: A string with any length describing the floorplan.
-- **Code**: A unique 4-character string representing the floorplan.
+- **Code**: A unique 1-4 character length string representing the floorplan.
 - **Key**: A concatenation of the site config's key and the floorplan's code, separated by a period ".". Since the codes are unique, a floorplan's key will also be unique.
 
 For example: If the site config key is "site" and a floorplan's code is "fp1", then the floorplan's key will be "site.fp1".
